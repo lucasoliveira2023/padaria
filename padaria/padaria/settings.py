@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-f_(+d)s7&7%1tc*ot8kxdfef@=3$e=s(c#6qbkl)8x^ks3nu$#'
+SECRET_KEY = 'django-insecure-shmdqmqg^c3n+65@6j9t(6(ofjlq&f0+4x+y1(^79f9!xyy$tg'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -76,7 +76,7 @@ WSGI_APPLICATION = 'padaria.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'padaria',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
@@ -103,9 +103,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-LANGUAGE_CODE = 'pt-br'
+LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC-8'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
