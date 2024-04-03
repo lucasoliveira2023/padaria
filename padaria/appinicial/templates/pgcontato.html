@@ -1,0 +1,36 @@
+{% extends "pginicio.html" %}
+{% load bootstrap5 %}
+{% block principal %}
+<style>
+    body {
+        background-color: black;
+    }
+    form{
+        color: green;
+    }
+
+    h1 {
+            text-align: center; /* Centraliza o título na página */
+            color: green;
+        }
+
+    p {
+        color:green;
+    }
+</style>
+<h1> Fale Conosco </h1>
+<p>
+    Envie uma mensagem através do formulário abaixo ou ligue para o telefone {{ telefone }}
+    falando com o responsável {{ responsavel|upper }}
+</p>
+{% if sucesso %}
+<p class="alert alert-success"> Mensagem enviada com sucesso </p>
+{% else %}
+<form action="" method="post" novalidate>
+    {% csrf_token %}
+    {% bootstrap_form form %}
+    <hr>
+    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+</form>
+{% endif %}
+{% endblock %}
