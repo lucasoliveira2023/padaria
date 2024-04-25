@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_bootstrap5',
-    'django-webpack-loader',
+    'webpack_loader',
     'rest_framework',
     'appinicial',
     'static',
