@@ -17,9 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from appinicial.views import inicio, Contato
+from financeiro import views
 
 urlpatterns = [
     path('', inicio, name='inicio'),
+    path('transacoes/', views.list_trasacao, name='lista_transacoes'),
     path('pgcontato/', Contato, name='contato'),
     path('admin/', admin.site.urls),
 ]

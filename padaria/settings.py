@@ -39,8 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_bootstrap5',
+    'django-webpack-loader',
+    'rest_framework',
     'appinicial',
     'static',
+    'financeiro',
     
 ]
 
@@ -59,7 +62,7 @@ ROOT_URLCONF = 'padaria.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],                      ###se der pau no front lembrar que foi aqui que eu modifiquei, modificacao dia 25-04-2024
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -126,6 +129,13 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
 
+WEBPACK_LOADER = {                                                ## modifiquei aqui tambem cado der pau, modificacao dia 25-04-2024
+    'DEFAULT': {
+        'CACHE': 'default', 
+        'BUNDLE_DIR_NAME': 'dist/',
+        'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.json'),
+    }
+}
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field

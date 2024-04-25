@@ -1,0 +1,16 @@
+<!-- lista_transacoes.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Transações</title>
+</head>
+<body>
+    <h1>Lista de Transações</h1>
+    <ul>
+        {% for transacao in transacoes %}
+            <li>{{ transacao.descricao }} - {{ transacao.valor }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
