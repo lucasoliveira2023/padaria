@@ -3,5 +3,5 @@ from financeiro import views
 
 
 urlpatterns = [
-    path('/transacoes/', views.list_trasacao, name='lista_transacoes'),
+    path('/transacoes/', views.list_transacao, name='lista_transacoes'),
 ]
