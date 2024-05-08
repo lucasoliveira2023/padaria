@@ -55,6 +55,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    #'django.contrib.staticfiles.middleware.StaticFilesMiddleware', ## essa adicao esta dando pau
 ]
 
 ROOT_URLCONF = 'padaria.urls'
