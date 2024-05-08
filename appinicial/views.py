@@ -2,12 +2,13 @@ from django.shortcuts import render
 from appinicial.forms import ContatoForm
 from appinicial.serializers import ContatoSerializer
 from rest_framework.generics import ListCreateAPIView
+from appinicial.models import Contato
 # Create your views here.
 
 def inicio(request):
     return render(request, 'pginicio.html')
 
-def Contato(request):
+def Contatopg(request):
     success = False
     form = ContatoForm(request.POST or None)
     if form .is_valid():
@@ -20,6 +21,7 @@ def Contato(request):
         'sucesso':success,
     }
     return render(request, 'pgcontato.html', contexto)    
+
 
 
 class ContatoListaCriada(ListCreateAPIView):

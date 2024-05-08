@@ -56,7 +56,13 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     #'django.contrib.staticfiles.middleware.StaticFilesMiddleware', ## essa adicao esta dando pau
+    'coresheaders.middleware.CorsMiddleware',
 ]
+
+REST_FRAMEWORK = {'DEFAULT_PERMISSION_CLASSES':['rest_framework.permissions.AllowAny']}                                           ##ADD DIA 08/05/2023
+
+CORS_ORIGIN_ALLOW_ALL = True
+
 
 ROOT_URLCONF = 'padaria.urls'
 
