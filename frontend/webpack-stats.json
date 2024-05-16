@@ -1,0 +1,21 @@
+{
+  "status": "done",
+  "assets": {
+    "bundle.js": {
+      "name": "bundle.js",
+      "path": "C:\\Users\\PC\\code\\python\\padaria\\frontend\\static\\bundles\\bundle.js",
+      "publicPath": "/static/bundles/bundle.js"
+    },
+    "node_modules_web-vitals_dist_web-vitals_js.bundle.js": {
+      "name": "node_modules_web-vitals_dist_web-vitals_js.bundle.js",
+      "path": "C:\\Users\\PC\\code\\python\\padaria\\frontend\\static\\bundles\\node_modules_web-vitals_dist_web-vitals_js.bundle.js",
+      "publicPath": "/static/bundles/node_modules_web-vitals_dist_web-vitals_js.bundle.js"
+    }
+  },
+  "chunks": {
+    "main": [
+      "bundle.js"
+    ]
+  },
+  "publicPath": "/static/bundles/"
+}
