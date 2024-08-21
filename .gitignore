@@ -1,3 +1,6 @@
 db.padaria
 /__pycache__
 /history
+padaria/lib
+padaria/Scripts
+padaria/pyvenv.cfg
