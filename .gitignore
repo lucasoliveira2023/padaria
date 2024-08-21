@@ -4,3 +4,4 @@ __pycache__/
 padaria/lib
 padaria/Scripts
 padaria/pyvenv.cfg
+padaria/__pycache__/
