@@ -6,3 +6,5 @@ class TransacaoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Transacao
         fields = '__all__'
+        
+    ##terminar essa api
