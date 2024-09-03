@@ -11,9 +11,9 @@ def duplic_transacoes(modeladmin, request, queryset):
 
 
 class TransacaoAdmin(admin.ModelAdmin):
-    list_display = ['descricao_da_transacao', 'valor_da_transacao', 'nome_da_transacao','data_da_transacao', 'valor_da_transacao', 'autor_da_transacao']
-    search_fields = ['descricao', 'valor_da_transacao', 'data_da_transacao', 'valor_da_transacao']
-    list_filter = ['data_da_transacao']
+    list_display = ['nome_transacao', 'valor_transacao', 'data_transacao', 'autor_transacao', 'descricao_transacao']
+    search_fields = ['descricao_transacao', 'valor_transacao', 'data_transacao']
+    list_filter = ['data_transacao']
     action = [duplic_transacoes]
 
     def save_model(self, request, obj, form, change):
