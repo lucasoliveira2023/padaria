@@ -10,10 +10,6 @@ def list_transacao(request):
     return render(request, 'lista_transacoes.html', {'transacoes': transacoes})
 
 
-#class TransacaoListCreate(generics.ListCreateAPIView):
-#    queryset = Transacao.objects.all()
-#    serializer_class = TransacaoSerializer
-
 def create_transaction(request):
     if request.method == 'POST':
         form = TransacaoForm(request.POST)
@@ -52,7 +48,7 @@ def update_transaction(request, pk):
 
 def delete_transaction(request, pk):
     transaction = get_object_or_404(Transacao, pk=pk)
-    if request.method == 'DELETE':
+    if request.method == 'POST': ##o delete tambem e uma especie de post so recomenda-se usar o post mesmo
         transaction.delete()
         return redirect('transaction_list')
     return render(request, 'finance/transaction_confirm_delete.html', {'transaction':transaction})
