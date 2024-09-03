@@ -6,3 +6,4 @@ padaria/Scripts
 padaria/pyvenv.cfg
 padaria/__pycache__/
 padaria/db.padaria
+db.padaria
