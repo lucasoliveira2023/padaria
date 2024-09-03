@@ -13,8 +13,7 @@ def list_transacao(request):
 #class TransacaoListCreate(generics.ListCreateAPIView):
 #    queryset = Transacao.objects.all()
 #    serializer_class = TransacaoSerializer
-    
-    
+
 def create_transaction(request):
     if request.method == 'POST':
         form = TransacaoForm(request.POST)
@@ -26,7 +25,19 @@ def create_transaction(request):
             form = TransacaoForm()
             
         return render(request, 'lista_transacoes.html', {'form': form})
-                      
+    
+def get_all_transaction(request):
+    if request.method == 'GET':
+        form = TransacaoForm(request.GET)
+        if form.is_valid():
+            form.save()
+            return redirect('lista_transacoes')
+        
+        else:
+            form = TransacaoForm()
+            
+        return render(request, 'lista_transacoes.html', {'form':form})
+    
 
 def update_transaction(request, pk):
     transaction = get_object_or_404(Transacao, pk=pk)
