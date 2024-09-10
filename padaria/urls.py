@@ -1,7 +1,8 @@
 from django.contrib import admin
 from django.urls import path, include
 from appinicial.views import inicio, index, Contato
-from financeiro.views import create_transaction, update_transaction, delete_transaction, list_transacao
+from financeiro.views import list_transacao, create_transaction, get_all_transaction, update_transaction, delete_transaction
+from financeiro.views import *
 
 
 urlpatterns = [
