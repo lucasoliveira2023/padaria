@@ -56,7 +56,7 @@ def get_all_transaction(request):
 def update_transaction(request, pk):
     transaction = get_object_or_404(Transacao, pk=pk)
     if request.method == 'POST':
-        if request.headers.get('x-requested-with') == 'XMLHttpRequest' or request.contend_type == 'aplication/json':
+        if request.headers.get('x-requested-with') == 'XMLHttpRequest' or request.contend_type == 'application/json':
             data = json.loads(request.body)
             form = TransacaoForm(data, instance=transaction)
             if form.is_valid():
@@ -75,7 +75,7 @@ def update_transaction(request, pk):
 def delete_transaction(request, pk):
     transaction = get_object_or_404(Transacao, pk=pk)
     if request.method == 'POST':##o delete tambem e uma especie de post so recomenda-se usar o post mesmo
-        if request.headers.get('x-requested-with') == 'XMLHttpRequest' or request.contend_type == 'aplication/json':
+        if request.headers.get('x-requested-with') == 'XMLHttpRequest' or request.contend_type == 'application/json':
             transaction.delete()
             return JsonResponse({'message': 'Transacao deletada com sucesso!'}, status=204)
         else:
