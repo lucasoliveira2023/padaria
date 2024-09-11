@@ -11,8 +11,8 @@ import json
 def list_transacao(request):
     transacoes = Transacao.objects.all()
     #verifica se a requiscao e AJAX ou rest_api e retorna json
-    if request.headers.get('x-requested-with') == 'XMLHttpRequest' or request.headers.get ('Content_Type') == 'aplication/json':
-        transacoes_data = list(transacoes.value('data', 'descricao', 'valor'))
+    if request.headers.get('x-requested-with') == 'XMLHttpRequest' or request.headers.get ('Content-Type') == 'application/json':
+        transacoes_data = list(transacoes.values('data', 'descricao', 'valor'))
         return JsonResponse({'transacoes': transacoes_data}, safe=False)
         
     return render(request, 'lista_transacoes.html', {'transacoes': transacoes})
@@ -20,7 +20,7 @@ def list_transacao(request):
 @csrf_exempt
 def create_transaction(request):
     if request.method == 'POST':
-        if request.headers.get('x-request-with') == 'XMLHttpRequest' or request.content_type == 'aplication/json':
+        if request.headers.get('x-request-with') == 'XMLHttpRequest' or request.content_type == 'application/json':
             data = json.loads(request.body)
             form = TransacaoForm(data)
             if form.is_valid():
@@ -56,7 +56,7 @@ def get_all_transaction(request):
 def update_transaction(request, pk):
     transaction = get_object_or_404(Transacao, pk=pk)
     if request.method == 'POST':
-        if request.headers.get('x-requested-with') == 'XMLHttpRequest' or request.contend_type == 'aplication/json':
+        if request.headers.get('x-requested-with') == 'XMLHttpRequest' or request.contend_type == 'application/json':
             data = json.loads(request.body)
             form = TransacaoForm(data, instance=transaction)
             if form.is_valid():
@@ -75,7 +75,7 @@ def update_transaction(request, pk):
 def delete_transaction(request, pk):
     transaction = get_object_or_404(Transacao, pk=pk)
     if request.method == 'POST':##o delete tambem e uma especie de post so recomenda-se usar o post mesmo
-        if request.headers.get('x-requested-with') == 'XMLHttpRequest' or request.contend_type == 'aplication/json':
+        if request.headers.get('x-requested-with') == 'XMLHttpRequest' or request.contend_type == 'application/json':
             transaction.delete()
             return JsonResponse({'message': 'Transacao deletada com sucesso!'}, status=204)
         else:

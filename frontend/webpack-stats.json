@@ -6,6 +6,16 @@
       "path": "C:\\Users\\lucas\\code\\padaria\\padaria\\frontend\\static\\bundles\\bundle.js",
       "publicPath": "/static/bundles/bundle.js"
     },
+    "main.0b4ccb8d0405c6b6b25b.hot-update.js": {
+      "name": "main.0b4ccb8d0405c6b6b25b.hot-update.js",
+      "path": "C:\\Users\\lucas\\code\\padaria\\padaria\\frontend\\static\\bundles\\main.0b4ccb8d0405c6b6b25b.hot-update.js",
+      "publicPath": "/static/bundles/main.0b4ccb8d0405c6b6b25b.hot-update.js"
+    },
+    "main.0b4ccb8d0405c6b6b25b.hot-update.json": {
+      "name": "main.0b4ccb8d0405c6b6b25b.hot-update.json",
+      "path": "C:\\Users\\lucas\\code\\padaria\\padaria\\frontend\\static\\bundles\\main.0b4ccb8d0405c6b6b25b.hot-update.json",
+      "publicPath": "/static/bundles/main.0b4ccb8d0405c6b6b25b.hot-update.json"
+    },
     "main.49f8d5a0d925b3160322.hot-update.js": {
       "name": "main.49f8d5a0d925b3160322.hot-update.js",
       "path": "C:\\Users\\lucas\\code\\padaria\\padaria\\frontend\\static\\bundles\\main.49f8d5a0d925b3160322.hot-update.js",
@@ -45,7 +55,7 @@
   "chunks": {
     "main": [
       "bundle.js",
-      "main.707f791c222195819717.hot-update.js"
+      "main.0b4ccb8d0405c6b6b25b.hot-update.js"
     ]
   },
   "publicPath": "/static/bundles/"
