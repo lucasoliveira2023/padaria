@@ -12,7 +12,7 @@ def list_transacao(request):
     transacoes = Transacao.objects.all()
     #verifica se a requiscao e AJAX ou rest_api e retorna json
     if request.headers.get('x-requested-with') == 'XMLHttpRequest' or request.headers.get ('Content-Type') == 'application/json':
-        transacoes_data = list(transacoes.values('data', 'descricao', 'valor'))
+        transacoes_data = list(transacoes.values('data_transacao', 'descricao_transacao', 'valor_transacao'))
         return JsonResponse({'transacoes': transacoes_data}, safe=False)
         
     return render(request, 'lista_transacoes.html', {'transacoes': transacoes})
@@ -43,14 +43,15 @@ def create_transaction(request):
 def get_all_transaction(request):
     if request.method == 'GET':
         
-        if request.headers.get('Accept') == 'application/json':
+        if request.headers.get('x-request-with') == 'XMLHttpRequest' or request.content_type == 'application/json':
             transacoes = Transacao.objects.all()
-            transacoes_data = list(transacoes.values('data', 'descricao', 'valor'))
+            transacoes_data = list(transacoes.values('autor_transacao', 'data_transacao', 'descricao_transacao', 'nome_transacao', 'valor_transacao'))
             return JsonResponse({'transacoes': transacoes_data}, safe=False)
-        
-        form =TransacaoForm()
-        return render(request, 'lista_transacoes.html', {'form':form})     
-        
+        else:            
+            form =TransacaoForm()
+            return render(request, 'lista_transacoes.html', {'form':form})     
+    else:
+        return JsonResponse({'error': 'Metodo nao permitido'}, status=405)
 
 @csrf_exempt
 def update_transaction(request, pk):

@@ -9,6 +9,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('', inicio, name='inicio'),
     path('transacoes/', list_transacao, name='lista_transacoes'),
+    path('transacoes-all', get_all_transaction, name='get_all_transaction'),
     path('transacoes/criar/', create_transaction, name='transaction_create'),
     path('transacoes/update/<int:pk>/', update_transaction, name='transaction_update'),
     path('transacoes/delete/<int:pk>/', delete_transaction, name='transaction_delete'),
