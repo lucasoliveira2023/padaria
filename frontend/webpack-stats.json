@@ -6,6 +6,26 @@
       "path": "C:\\Users\\lucas\\code\\padaria\\padaria\\frontend\\static\\bundles\\bundle.js",
       "publicPath": "/static/bundles/bundle.js"
     },
+    "main.49f8d5a0d925b3160322.hot-update.js": {
+      "name": "main.49f8d5a0d925b3160322.hot-update.js",
+      "path": "C:\\Users\\lucas\\code\\padaria\\padaria\\frontend\\static\\bundles\\main.49f8d5a0d925b3160322.hot-update.js",
+      "publicPath": "/static/bundles/main.49f8d5a0d925b3160322.hot-update.js"
+    },
+    "main.49f8d5a0d925b3160322.hot-update.json": {
+      "name": "main.49f8d5a0d925b3160322.hot-update.json",
+      "path": "C:\\Users\\lucas\\code\\padaria\\padaria\\frontend\\static\\bundles\\main.49f8d5a0d925b3160322.hot-update.json",
+      "publicPath": "/static/bundles/main.49f8d5a0d925b3160322.hot-update.json"
+    },
+    "main.dfa4c1e3c109063d647e.hot-update.js": {
+      "name": "main.dfa4c1e3c109063d647e.hot-update.js",
+      "path": "C:\\Users\\lucas\\code\\padaria\\padaria\\frontend\\static\\bundles\\main.dfa4c1e3c109063d647e.hot-update.js",
+      "publicPath": "/static/bundles/main.dfa4c1e3c109063d647e.hot-update.js"
+    },
+    "main.dfa4c1e3c109063d647e.hot-update.json": {
+      "name": "main.dfa4c1e3c109063d647e.hot-update.json",
+      "path": "C:\\Users\\lucas\\code\\padaria\\padaria\\frontend\\static\\bundles\\main.dfa4c1e3c109063d647e.hot-update.json",
+      "publicPath": "/static/bundles/main.dfa4c1e3c109063d647e.hot-update.json"
+    },
     "node_modules_web-vitals_dist_web-vitals_js.bundle.js": {
       "name": "node_modules_web-vitals_dist_web-vitals_js.bundle.js",
       "path": "C:\\Users\\lucas\\code\\padaria\\padaria\\frontend\\static\\bundles\\node_modules_web-vitals_dist_web-vitals_js.bundle.js",
@@ -14,7 +34,8 @@
   },
   "chunks": {
     "main": [
-      "bundle.js"
+      "bundle.js",
+      "main.dfa4c1e3c109063d647e.hot-update.js"
     ]
   },
   "publicPath": "/static/bundles/"
