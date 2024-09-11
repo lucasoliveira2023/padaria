@@ -3,29 +3,29 @@
   "assets": {
     "bundle.js": {
       "name": "bundle.js",
-      "path": "C:\\Users\\lucas\\code\\padaria\\frontend\\static\\bundles\\bundle.js",
+      "path": "C:\\Users\\lucas\\code\\padaria\\padaria\\frontend\\static\\bundles\\bundle.js",
       "publicPath": "/static/bundles/bundle.js"
     },
-    "main.536695a7e4c7fb6a5319.hot-update.js": {
-      "name": "main.536695a7e4c7fb6a5319.hot-update.js",
-      "path": "C:\\Users\\lucas\\code\\padaria\\frontend\\static\\bundles\\main.536695a7e4c7fb6a5319.hot-update.js",
-      "publicPath": "/static/bundles/main.536695a7e4c7fb6a5319.hot-update.js"
+    "main.49f8d5a0d925b3160322.hot-update.js": {
+      "name": "main.49f8d5a0d925b3160322.hot-update.js",
+      "path": "C:\\Users\\lucas\\code\\padaria\\padaria\\frontend\\static\\bundles\\main.49f8d5a0d925b3160322.hot-update.js",
+      "publicPath": "/static/bundles/main.49f8d5a0d925b3160322.hot-update.js"
     },
-    "main.536695a7e4c7fb6a5319.hot-update.json": {
-      "name": "main.536695a7e4c7fb6a5319.hot-update.json",
-      "path": "C:\\Users\\lucas\\code\\padaria\\frontend\\static\\bundles\\main.536695a7e4c7fb6a5319.hot-update.json",
-      "publicPath": "/static/bundles/main.536695a7e4c7fb6a5319.hot-update.json"
+    "main.49f8d5a0d925b3160322.hot-update.json": {
+      "name": "main.49f8d5a0d925b3160322.hot-update.json",
+      "path": "C:\\Users\\lucas\\code\\padaria\\padaria\\frontend\\static\\bundles\\main.49f8d5a0d925b3160322.hot-update.json",
+      "publicPath": "/static/bundles/main.49f8d5a0d925b3160322.hot-update.json"
     },
     "node_modules_web-vitals_dist_web-vitals_js.bundle.js": {
       "name": "node_modules_web-vitals_dist_web-vitals_js.bundle.js",
-      "path": "C:\\Users\\lucas\\code\\padaria\\frontend\\static\\bundles\\node_modules_web-vitals_dist_web-vitals_js.bundle.js",
+      "path": "C:\\Users\\lucas\\code\\padaria\\padaria\\frontend\\static\\bundles\\node_modules_web-vitals_dist_web-vitals_js.bundle.js",
       "publicPath": "/static/bundles/node_modules_web-vitals_dist_web-vitals_js.bundle.js"
     }
   },
   "chunks": {
     "main": [
       "bundle.js",
-      "main.536695a7e4c7fb6a5319.hot-update.js"
+      "main.49f8d5a0d925b3160322.hot-update.js"
     ]
   },
   "publicPath": "/static/bundles/"
